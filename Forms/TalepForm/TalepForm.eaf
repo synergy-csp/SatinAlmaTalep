@@ -1,0 +1,809 @@
+{
+  "data": {
+    "TalepForm": {
+      "properties": {
+        "ddl": {
+          "name": "TalepForm"
+        },
+        "text": {
+          "tr-TR": "TalepForm",
+          "en-US": "TalepForm"
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "TalepForm",
+            "en-US": "TalepForm"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "toolbarSaveButton",
+            "name": "Kaydet",
+            "icon": "save",
+            "enabled": true,
+            "caption": {
+              "text": {
+                "tr-TR": "Kaydet",
+                "en-US": "Save"
+              }
+            }
+          }
+        ],
+        "name": "TalepForm",
+        "controlId": "c3c169df-af3f-47a7-bf90-8cf0f8d4c7ef",
+        "controlType": "Form",
+        "rules": {
+          "FormRequiredFields": {
+            "id": "FormRequiredFields",
+            "name": "FormRequiredFields",
+            "enabled": true,
+            "orderNo": 0,
+            "statements": [
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_ComboBox1",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "messages": {
+                      "tr-TR": "Malzeme: Gerekli alan"
+                    },
+                    "approvalActions": [],
+                    "rejectionActions": [],
+                    "enabled": true,
+                    "id": "FormRequiredToasterMessage_default_ComboBox1",
+                    "typeName": "ValidationFailureAction",
+                    "name": "ComboBox1_Required"
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_ComboBox1",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_ComboBox1_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "ComboBox1",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_ComboBox1",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "TalepForm",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_NumberBox1",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "messages": {
+                      "tr-TR": "Birim: Gerekli alan"
+                    },
+                    "approvalActions": [],
+                    "rejectionActions": [],
+                    "enabled": true,
+                    "id": "FormRequiredToasterMessage_default_NumberBox1",
+                    "typeName": "ValidationFailureAction",
+                    "name": "NumberBox1_Required"
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_NumberBox1",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_NumberBox1_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "NumberBox1",
+                        "propertyName": "value",
+                        "type": "number",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_NumberBox1",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "TalepForm",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_NumberBox2",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "messages": {
+                      "tr-TR": "Birim Fiyat: Gerekli alan"
+                    },
+                    "approvalActions": [],
+                    "rejectionActions": [],
+                    "enabled": true,
+                    "id": "FormRequiredToasterMessage_default_NumberBox2",
+                    "typeName": "ValidationFailureAction",
+                    "name": "NumberBox2_Required"
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_NumberBox2",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_NumberBox2_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "NumberBox2",
+                        "propertyName": "value",
+                        "type": "number",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_NumberBox2",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "TalepForm",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              }
+            ],
+            "actions": [
+              {
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "messages": {
+                  "tr-TR": "Malzeme: Gerekli alan"
+                },
+                "approvalActions": [],
+                "rejectionActions": [],
+                "enabled": true,
+                "id": "FormRequiredToasterMessage_default_ComboBox1",
+                "typeName": "ValidationFailureAction",
+                "name": "ComboBox1_Required"
+              },
+              {
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "messages": {
+                  "tr-TR": "Birim: Gerekli alan"
+                },
+                "approvalActions": [],
+                "rejectionActions": [],
+                "enabled": true,
+                "id": "FormRequiredToasterMessage_default_NumberBox1",
+                "typeName": "ValidationFailureAction",
+                "name": "NumberBox1_Required"
+              },
+              {
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "messages": {
+                  "tr-TR": "Birim Fiyat: Gerekli alan"
+                },
+                "approvalActions": [],
+                "rejectionActions": [],
+                "enabled": true,
+                "id": "FormRequiredToasterMessage_default_NumberBox2",
+                "typeName": "ValidationFailureAction",
+                "name": "NumberBox2_Required"
+              }
+            ],
+            "triggerEvents": [
+              "TalepForm.client.OnBeforeSave",
+              "TalepForm.server.OnBeforeSave"
+            ]
+          },
+          "3b94d280-9ef1-6e28-77cd-7fa586e3dcdf": {
+            "id": "3b94d280-9ef1-6e28-77cd-7fa586e3dcdf",
+            "name": "Toplam Tutar Hesaplama",
+            "enabled": true,
+            "orderNo": 1,
+            "statements": [
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "7acd6e3a-117a-e68d-9949-9fe5fcac14e9",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "value": "[NumberBox1.value] * [NumberBox2.value]",
+                    "field": {
+                      "name": "NumberBox3",
+                      "propertyName": "value",
+                      "type": "number",
+                      "enumMembers": []
+                    },
+                    "enabled": true,
+                    "id": "7939bb10-4c15-f967-4ab5-daff2d13ce57",
+                    "typeName": "ValueAssignActionWithFormula",
+                    "name": "Toplam Tutar Hesaplama"
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "7480c022-d70c-e8be-bff2-fe38bef6f7ac",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "db3bcbb4-45db-d240-5305-179bf40099c5",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "NumberBox3",
+                        "propertyName": "value",
+                        "type": "number",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": 0
+                    }
+                  ],
+                  "collapsed": false
+                }
+              }
+            ],
+            "actions": [
+              {
+                "value": "[NumberBox1.value] * [NumberBox2.value]",
+                "field": {
+                  "name": "NumberBox3",
+                  "propertyName": "value",
+                  "type": "number",
+                  "enumMembers": []
+                },
+                "enabled": true,
+                "id": "7939bb10-4c15-f967-4ab5-daff2d13ce57",
+                "typeName": "ValueAssignActionWithFormula",
+                "name": "Toplam Tutar Hesaplama"
+              }
+            ],
+            "triggerEvents": [
+              "TalepForm.client.OnBeforeSave",
+              "TalepForm.server.OnBeforeSave"
+            ]
+          }
+        }
+      },
+      "id": "TalepForm",
+      "type": "Form"
+    },
+    "Header1": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Header1",
+            "en-US": "Header1"
+          },
+          "visible": false,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": false,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "font": {
+          "bold": true,
+          "color": "rgb(255, 14, 14)",
+          "family": "Source Sans Pro, sans-serif",
+          "italic": false,
+          "strikethrough": false,
+          "underline": true
+        },
+        "name": "Header1",
+        "controlId": "0bd68a1f-0dab-ba44-077d-b2023ba17862",
+        "ddl": {
+          "name": "Header1"
+        },
+        "text": {
+          "tr-TR": "Sat?n Alma Talep Detay?"
+        },
+        "controlType": "Header"
+      },
+      "id": "Header1",
+      "type": "Header"
+    },
+    "ComboBox1": {
+      "properties": {
+        "items": [
+          {
+            "key": "1",
+            "value": "1",
+            "text": {
+              "tr-TR": "Kahve"
+            },
+            "selected": false
+          },
+          {
+            "key": "2",
+            "value": "2",
+            "text": {
+              "tr-TR": "G?da"
+            },
+            "selected": false
+          },
+          {
+            "key": "3",
+            "value": "3",
+            "text": {
+              "tr-TR": "?ay"
+            },
+            "selected": false
+          },
+          {
+            "key": "4",
+            "value": "4",
+            "text": {
+              "tr-TR": "Bardak"
+            },
+            "selected": false
+          }
+        ],
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Malzeme",
+            "en-US": "ComboBox1"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "name": "ComboBox1",
+        "ddl": {
+          "name": "ComboBox1"
+        },
+        "controlId": "39bea175-03de-6711-879a-0d7b792d0bfa",
+        "dataSourceType": "static",
+        "required": false,
+        "controlType": "ComboBox"
+      },
+      "id": "ComboBox1",
+      "type": "ComboBox"
+    },
+    "NumberBox1": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Birim",
+            "en-US": "NumberBox1"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "name": "NumberBox1",
+        "ddl": {
+          "name": "NumberBox1",
+          "allowNull": true,
+          "type": "Decimal"
+        },
+        "placeholder": {
+          "tr-TR": "Talep edilen malzeme adedi/miktar?"
+        },
+        "controlId": "8b2ad6c2-2c2d-46ef-809c-864f62cb6d9c",
+        "required": false,
+        "controlType": "NumberBox"
+      },
+      "id": "NumberBox1",
+      "type": "NumberBox"
+    },
+    "NumberBox2": {
+      "properties": {
+        "useThousandSeparator": true,
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Birim Fiyat",
+            "en-US": "NumberBox2"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "name": "NumberBox2",
+        "ddl": {
+          "name": "NumberBox2",
+          "allowNull": true,
+          "type": "Decimal"
+        },
+        "placeholder": {
+          "tr-TR": "Adet/miktar fiyat?"
+        },
+        "controlType": "NumberBox",
+        "controlId": "119205b9-61fa-b7c2-b47d-9388a62168e7",
+        "precision": 2,
+        "required": false
+      },
+      "id": "NumberBox2",
+      "type": "NumberBox"
+    },
+    "NumberBox3": {
+      "properties": {
+        "useThousandSeparator": true,
+        "readOnly": true,
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Toplam Tutar",
+            "en-US": "NumberBox3"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "name": "NumberBox3",
+        "ddl": {
+          "name": "NumberBox3",
+          "allowNull": true,
+          "type": "Decimal"
+        },
+        "style": {
+          "backgroundColor": "rgba(155, 155, 155, 0.66)"
+        },
+        "controlType": "NumberBox",
+        "controlId": "19103d73-1f20-5ef9-3d61-6276148b126d",
+        "precision": 2,
+        "required": false
+      },
+      "id": "NumberBox3",
+      "type": "NumberBox"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "Column7": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row7",
+            "items": [
+              "NumberBox2"
+            ],
+            "id": "Column7",
+            "type": "Column"
+          },
+          "Column9": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row9",
+            "items": [
+              "NumberBox3"
+            ],
+            "id": "Column9",
+            "type": "Column"
+          },
+          "Header1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "Header1",
+            "type": "Header"
+          },
+          "TalepForm": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": true
+            },
+            "parentId": null,
+            "items": [
+              "Row1",
+              "Row3",
+              "Row5",
+              "Row7",
+              "Row9"
+            ],
+            "id": "TalepForm",
+            "type": "Form"
+          },
+          "NumberBox1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column5",
+            "items": [],
+            "id": "NumberBox1",
+            "type": "NumberBox"
+          },
+          "NumberBox2": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column7",
+            "items": [],
+            "id": "NumberBox2",
+            "type": "NumberBox"
+          },
+          "NumberBox3": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "NumberBox3",
+            "type": "NumberBox"
+          },
+          "ComboBox1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column3",
+            "items": [],
+            "id": "ComboBox1",
+            "type": "ComboBox"
+          },
+          "Row1": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "TalepForm",
+            "items": [
+              "Column1"
+            ],
+            "id": "Row1",
+            "type": "Row"
+          },
+          "Row3": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "TalepForm",
+            "items": [
+              "Column3"
+            ],
+            "id": "Row3",
+            "type": "Row"
+          },
+          "Row5": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "TalepForm",
+            "items": [
+              "Column5"
+            ],
+            "id": "Row5",
+            "type": "Row"
+          },
+          "Column1": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row1",
+            "items": [
+              "Header1"
+            ],
+            "id": "Column1",
+            "type": "Column"
+          },
+          "Row7": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "TalepForm",
+            "items": [
+              "Column7"
+            ],
+            "id": "Row7",
+            "type": "Row"
+          },
+          "Column3": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row3",
+            "items": [
+              "ComboBox1"
+            ],
+            "id": "Column3",
+            "type": "Column"
+          },
+          "Row9": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "TalepForm",
+            "items": [
+              "Column9"
+            ],
+            "id": "Row9",
+            "type": "Row"
+          },
+          "Column5": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row5",
+            "items": [
+              "NumberBox1"
+            ],
+            "id": "Column5",
+            "type": "Column"
+          }
+        }
+      },
+      "result": [
+        "TalepForm"
+      ],
+      "description": null
+    }
+  },
+  "activeView": "default",
+  "version": 1
+}

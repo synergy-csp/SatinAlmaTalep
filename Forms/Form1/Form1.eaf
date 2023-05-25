@@ -1,0 +1,2329 @@
+{
+  "data": {
+    "DataGrid1": {
+      "properties": {
+        "clientEvents": [
+          {
+            "name": "OnPropertyChanged",
+            "methodName": "DataGrid1_OnPropertyChanged"
+          }
+        ],
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "top",
+          "text": {
+            "tr-TR": "Sat?n Alma Detaylar?",
+            "en-US": "DataGrid1"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": false,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "name": "DataGrid1",
+        "ddl": {
+          "name": "DataGrid1"
+        },
+        "toolbarActionButtons": [
+          {
+            "name": "CREATERELATIONDOCUMENT",
+            "icon": "add",
+            "text": {
+              "tr-TR": "Ekle",
+              "en-US": "Add"
+            },
+            "title": {
+              "tr-TR": "Ekle",
+              "en-US": "Add"
+            },
+            "typeName": "CreateFormArgs",
+            "args": {
+              "typeName": "CreateFormArgs",
+              "formName": "TalepForm",
+              "projectName": "BCD_SATINALMATALEP",
+              "size": 1
+            },
+            "extendedArgs": {
+              "id": "cb42146e-9aef-20c2-2849-aef3453f1bef"
+            }
+          }
+        ],
+        "controlType": "DataGrid",
+        "controlId": "1397e8b6-8d32-4c2d-d3fd-7a9ab2d5cdd8",
+        "columns": [
+          {
+            "caption": {
+              "tr-TR": "Dok?man Kimli?i",
+              "en-US": "Document ID"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "cellType": "number",
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "name": "RELATIONDOCUMENTID",
+            "summaryTypes": [],
+            "control": {
+              "name": "RELATIONDOCUMENTID",
+              "controlId": "RELATIONDOCUMENTID",
+              "controlType": "NumberBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "RELATIONDOCUMENTID",
+                "allowNull": true,
+                "type": "Decimal"
+              },
+              "text": "",
+              "step": 1,
+              "precision": 0,
+              "useThousandSeparator": false,
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": true,
+            "autoIncrement": false,
+            "actionButtonProps": {
+              "name": "RELATIONDOCUMENTID",
+              "text": {
+                "tr-TR": "RELATIONDOCUMENTID",
+                "en-US": "RELATIONDOCUMENTID"
+              },
+              "title": {
+                "tr-TR": "RELATIONDOCUMENTID",
+                "en-US": "RELATIONDOCUMENTID"
+              },
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "visible": true,
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null
+              }
+            },
+            "isGeneratedColumn": true
+          },
+          {
+            "caption": {
+              "tr-TR": "D?zenle",
+              "en-US": "Edit"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "cellType": "actionButton",
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "name": "OPENRELATIONDOCUMENT",
+            "summaryTypes": [],
+            "control": {
+              "controlId": "OPENRELATIONDOCUMENT",
+              "name": "OPENRELATIONDOCUMENT",
+              "ddl": {
+                "name": "OPENRELATIONDOCUMENT"
+              }
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "actionButtonProps": {
+              "name": "OPENRELATIONDOCUMENT",
+              "text": {
+                "tr-TR": "D?zenle",
+                "en-US": "Edit"
+              },
+              "title": {
+                "tr-TR": "D?zenle",
+                "en-US": "Edit"
+              },
+              "icon": "edit",
+              "typeName": "OpenFormArgs",
+              "visible": true,
+              "args": {
+                "typeName": "OpenFormArgs",
+                "documentId": "[RELATIONDOCUMENTID]"
+              }
+            },
+            "isGeneratedColumn": true
+          },
+          {
+            "caption": {
+              "tr-TR": "Malzeme"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "cellType": "select",
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "name": "ComboBox1",
+            "summaryTypePrefixes": [],
+            "summaryTypes": [],
+            "control": {
+              "name": "ComboBox1",
+              "controlId": "ComboBox1",
+              "controlType": "ComboBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "ComboBox1"
+              },
+              "text": "",
+              "items": [
+                {
+                  "text": {
+                    "tr-TR": "Kahve"
+                  },
+                  "key": "1",
+                  "value": "1",
+                  "selected": false,
+                  "icon": "",
+                  "field": null
+                },
+                {
+                  "text": {
+                    "tr-TR": "G?da"
+                  },
+                  "key": "2",
+                  "value": "2",
+                  "selected": false,
+                  "icon": "",
+                  "field": null
+                },
+                {
+                  "text": {
+                    "tr-TR": "?ay"
+                  },
+                  "key": "3",
+                  "value": "3",
+                  "selected": false,
+                  "icon": "",
+                  "field": null
+                },
+                {
+                  "text": {
+                    "tr-TR": "Bardak"
+                  },
+                  "key": "4",
+                  "value": "4",
+                  "selected": false,
+                  "icon": "",
+                  "field": null
+                }
+              ],
+              "dataSource": {
+                "name": "",
+                "valueExpr": "",
+                "displayExpr": [],
+                "displayFormat": "",
+                "culture": "",
+                "cultureMember": "",
+                "multiLanguagePath": "",
+                "runAtServer": false,
+                "parameters": [],
+                "multiLanguageLoadOptions": [],
+                "connectionType": null
+              },
+              "valueType": "string",
+              "dataSourceType": "static",
+              "decimalValuePrecision": 0,
+              "dateValueFormat": "",
+              "allowClear": true,
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "isGeneratedColumn": true,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "disableToExport": false,
+            "format": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "add",
+              "typeName": "CreateFormArgs",
+              "args": null,
+              "visible": true
+            }
+          },
+          {
+            "caption": {
+              "tr-TR": "Birim"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "cellType": "number",
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "name": "NumberBox1",
+            "summaryTypePrefixes": [],
+            "summaryTypes": [],
+            "control": {
+              "name": "NumberBox1",
+              "controlId": "NumberBox1",
+              "controlType": "NumberBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "NumberBox1",
+                "allowNull": true,
+                "type": "Decimal"
+              },
+              "text": "",
+              "step": 1,
+              "precision": 0,
+              "useThousandSeparator": false,
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "isGeneratedColumn": true,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "disableToExport": false,
+            "format": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "add",
+              "typeName": "CreateFormArgs",
+              "args": null,
+              "visible": true
+            }
+          },
+          {
+            "caption": {
+              "tr-TR": "Birim Fiyat"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "cellType": "number",
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "name": "NumberBox2",
+            "summaryTypePrefixes": [],
+            "summaryTypes": [],
+            "control": {
+              "name": "NumberBox2",
+              "controlId": "NumberBox2",
+              "controlType": "NumberBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "NumberBox2",
+                "allowNull": true,
+                "type": "Decimal"
+              },
+              "text": "",
+              "step": 1,
+              "precision": 0,
+              "useThousandSeparator": false,
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "isGeneratedColumn": true,
+            "autoIncrement": false,
+            "useThousandSeparator": true,
+            "precision": 2,
+            "disableToExport": false,
+            "format": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "add",
+              "typeName": "CreateFormArgs",
+              "args": null,
+              "visible": true
+            }
+          },
+          {
+            "caption": {
+              "tr-TR": "Toplam Tutar"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "cellType": "number",
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "name": "NumberBox3",
+            "summaryTypePrefixes": [
+              {
+                "type": "sum",
+                "suffix": null
+              }
+            ],
+            "summaryTypes": [],
+            "control": {
+              "name": "NumberBox3",
+              "controlId": "NumberBox3",
+              "controlType": "NumberBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "NumberBox3",
+                "allowNull": true,
+                "type": "Decimal"
+              },
+              "text": "",
+              "step": 1,
+              "precision": 0,
+              "useThousandSeparator": false,
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "isGeneratedColumn": true,
+            "autoIncrement": false,
+            "useThousandSeparator": true,
+            "precision": 2,
+            "disableToExport": false,
+            "format": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "add",
+              "typeName": "CreateFormArgs",
+              "args": null,
+              "visible": true
+            }
+          }
+        ],
+        "dataSourceType": "relation"
+      },
+      "id": "DataGrid1",
+      "type": "DataGrid"
+    },
+    "RelatedDocuments1": {
+      "properties": {
+        "path": "kozen/BCD_SATINALMATALEP/Ekler",
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "top",
+          "text": {
+            "tr-TR": "Ekli Dosyalar",
+            "en-US": "RelatedDocuments1"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": false,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "showCreateDate": true,
+        "name": "RelatedDocuments1",
+        "targetId": "42965",
+        "ddl": {
+          "name": "RelatedDocuments1"
+        },
+        "controlType": "RelatedDocuments",
+        "controlId": "146911ee-02c8-82bf-acae-6b745d045be6",
+        "categories": [
+          {
+            "categoryId": "50470143-1624-5436-9bcf-adbbc0774e9b",
+            "name": {
+              "tr-TR": "Varsay?lan"
+            },
+            "description": {
+              "tr-TR": "Varsay?lan"
+            },
+            "minFilesCount": 1,
+            "maxFilesCount": 2,
+            "enabled": true,
+            "path": "kozen/BCD_SATINALMATALEP/Ekler",
+            "maxFileSize": null,
+            "allowedFileExtensions": [
+              "PDF",
+              "DOC",
+              "DOCX",
+              "XLS",
+              "XLSX"
+            ]
+          }
+        ]
+      },
+      "id": "RelatedDocuments1",
+      "type": "RelatedDocuments"
+    },
+    "Header1": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Header1",
+            "en-US": "Header1"
+          },
+          "visible": false,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": false,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "font": {
+          "bold": true,
+          "color": "rgb(208, 2, 27)",
+          "family": "Source Sans Pro, sans-serif",
+          "italic": false,
+          "strikethrough": false,
+          "underline": true
+        },
+        "name": "Header1",
+        "controlId": "6d8cdc3c-084e-291e-9876-47fba661ac6c",
+        "ddl": {
+          "name": "Header1"
+        },
+        "text": {
+          "tr-TR": "SATIN ALMA TALEP FORMU"
+        },
+        "controlType": "Header"
+      },
+      "id": "Header1",
+      "type": "Header"
+    },
+    "DocumentMetadata1": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Belge Numaras?",
+            "en-US": "DocumentMetadata1"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "ddl": {
+          "name": "DocumentMetadata1",
+          "type": "String",
+          "size": 100,
+          "allowNull": true
+        },
+        "name": "DocumentMetadata1",
+        "controlId": "b8ed2231-702f-44ff-0787-fb9e581b7c5f",
+        "controlType": "DocumentMetadata"
+      },
+      "id": "DocumentMetadata1",
+      "type": "DocumentMetadata"
+    },
+    "DocumentMetadata2": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Belge Tarihi",
+            "en-US": "DocumentMetadata2"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "ddl": {
+          "name": "DocumentMetadata2",
+          "type": "String",
+          "size": 100,
+          "allowNull": true
+        },
+        "metadataType": "CreateDate",
+        "name": "DocumentMetadata2",
+        "controlId": "506af39e-5976-cfed-9efd-e32f5f762331",
+        "dateFormat": "DD.MM.YYYY",
+        "controlType": "DocumentMetadata"
+      },
+      "id": "DocumentMetadata2",
+      "type": "DocumentMetadata"
+    },
+    "Form1": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Form1",
+            "en-US": "Form1"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "toolbarSaveButton",
+            "name": "Kaydet",
+            "icon": "save",
+            "enabled": true,
+            "caption": {
+              "text": {
+                "tr-TR": "Kaydet",
+                "en-US": "Save"
+              }
+            }
+          }
+        ],
+        "name": "Form1",
+        "activeView": "yoneticigorunum",
+        "ddl": {
+          "name": "Form1"
+        },
+        "text": {
+          "tr-TR": "Form1",
+          "en-US": "Form1"
+        },
+        "rules": {
+          "FormRequiredFields": {
+            "id": "FormRequiredFields",
+            "name": "FormRequiredFields",
+            "enabled": true,
+            "orderNo": 0,
+            "statements": [
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_yoneticigorunum_TextArea2",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_yoneticigorunum_TextArea2",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "TextArea2_Required",
+                    "messages": {
+                      "tr-TR": "Y?netici A??klamas?: Gerekli alan"
+                    }
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_yoneticigorunum_TextArea2",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_yoneticigorunum_TextArea2_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "TextArea2",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_yoneticigorunum_TextArea2",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "Form1",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "yoneticigorunum"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              }
+            ],
+            "actions": [
+              {
+                "id": "FormRequiredToasterMessage_yoneticigorunum_TextArea2",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "TextArea2_Required",
+                "messages": {
+                  "tr-TR": "Y?netici A??klamas?: Gerekli alan"
+                }
+              }
+            ],
+            "triggerEvents": [
+              "Form1.client.OnBeforeSave",
+              "Form1.server.OnBeforeSave"
+            ]
+          }
+        },
+        "controlType": "Form",
+        "controlId": "39f5a194-bc12-43fe-ab40-08bb8060db24"
+      },
+      "id": "Form1",
+      "type": "Form"
+    },
+    "NumberBox1": {
+      "properties": {
+        "useThousandSeparator": true,
+        "readOnly": true,
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Toplam Tutar",
+            "en-US": "NumberBox1"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "name": "NumberBox1",
+        "ddl": {
+          "name": "NumberBox1",
+          "allowNull": true,
+          "type": "Decimal"
+        },
+        "style": {
+          "backgroundColor": "rgba(155, 155, 155, 0.8)"
+        },
+        "controlType": "NumberBox",
+        "controlId": "cfeb89b6-dd2f-0b48-62fc-2ee08f4af661",
+        "precision": 2
+      },
+      "id": "NumberBox1",
+      "type": "NumberBox"
+    },
+    "UserMetadata1": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Ad Soyad",
+            "en-US": "UserMetadata1"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "ddl": {
+          "name": "UserMetadata1",
+          "type": "String",
+          "size": 100,
+          "allowNull": true
+        },
+        "name": "UserMetadata1",
+        "controlId": "0da9e567-8b4c-824b-76b3-d7e0dec56a46",
+        "controlType": "UserMetadata"
+      },
+      "id": "UserMetadata1",
+      "type": "UserMetadata"
+    },
+    "TextArea1": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "A??klama",
+            "en-US": "TextArea1"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "name": "TextArea1",
+        "ddl": {
+          "name": "TextArea1",
+          "allowNull": true,
+          "size": 50,
+          "type": "String"
+        },
+        "controlId": "ed736a2a-124c-af8f-e05e-823ed261de40",
+        "rows": 4,
+        "controlType": "TextArea"
+      },
+      "id": "TextArea1",
+      "type": "TextArea"
+    },
+    "Divider1": {
+      "properties": {
+        "name": "Divider1",
+        "controlId": "df5eca87-cf59-f261-7f27-aede785b4190",
+        "controlType": "Divider",
+        "caption": {
+          "text": {
+            "tr-TR": "Divider1",
+            "en-US": "Divider1"
+          }
+        },
+        "ddl": {
+          "name": "Divider1"
+        }
+      },
+      "id": "Divider1",
+      "type": "Divider"
+    },
+    "UserMetadata2": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Pozisyon",
+            "en-US": "UserMetadata2"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "ddl": {
+          "name": "UserMetadata2",
+          "type": "String",
+          "size": 100,
+          "allowNull": true
+        },
+        "metadataType": "Position",
+        "name": "UserMetadata2",
+        "controlId": "3e572957-a29e-f9b1-226c-617de9f49cd2",
+        "controlType": "UserMetadata"
+      },
+      "id": "UserMetadata2",
+      "type": "UserMetadata"
+    },
+    "TextArea2": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Y?netici A??klamas?",
+            "en-US": "TextArea2"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": false,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "name": "TextArea2",
+        "ddl": {
+          "name": "TextArea2",
+          "allowNull": true,
+          "size": 50,
+          "type": "String"
+        },
+        "controlId": "6e371fd6-8641-19e6-152c-83fa464601aa",
+        "rows": 4,
+        "required": true,
+        "controlType": "TextArea"
+      },
+      "id": "TextArea2",
+      "type": "TextArea"
+    },
+    "UserMetadata3": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Departman",
+            "en-US": "UserMetadata3"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "ddl": {
+          "name": "UserMetadata3",
+          "type": "String",
+          "size": 100,
+          "allowNull": true
+        },
+        "name": "UserMetadata3",
+        "controlId": "9e1857d1-523d-e36c-fcf5-4661864f2851",
+        "controlType": "UserMetadata"
+      },
+      "id": "UserMetadata3",
+      "type": "UserMetadata"
+    },
+    "UserMetadata4": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "E-posta",
+            "en-US": "UserMetadata4"
+          },
+          "visible": true,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": true,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "ddl": {
+          "name": "UserMetadata4",
+          "type": "String",
+          "size": 100,
+          "allowNull": true
+        },
+        "metadataType": "EmailAddress",
+        "name": "UserMetadata4",
+        "controlId": "863691f3-cfa4-d1db-8f53-498d59d0ee32",
+        "controlType": "UserMetadata"
+      },
+      "id": "UserMetadata4",
+      "type": "UserMetadata"
+    },
+    "Label1": {
+      "properties": {
+        "caption": {
+          "ellipsis": true,
+          "font": {
+            "bold": false,
+            "color": "#25241f",
+            "family": "Source Sans Pro, sans-serif",
+            "italic": false,
+            "size": "13",
+            "strikethrough": false,
+            "underline": false
+          },
+          "position": "left",
+          "text": {
+            "tr-TR": "Label1",
+            "en-US": "Label1"
+          },
+          "visible": false,
+          "size": {
+            "width": 120,
+            "height": 34
+          },
+          "horizontalAlign": "left",
+          "verticalAlign": "middle",
+          "showColon": false,
+          "markSettings": {
+            "char": null,
+            "position": "atFirst",
+            "style": {}
+          }
+        },
+        "font": {
+          "bold": true,
+          "color": "#4a90e2",
+          "family": "Source Sans Pro, sans-serif",
+          "italic": false,
+          "size": 13,
+          "strikethrough": false,
+          "underline": true
+        },
+        "name": "Label1",
+        "controlId": "e7c8405d-ed31-6ba5-cb13-d9837ca336b5",
+        "ddl": {
+          "name": "Label1"
+        },
+        "text": {
+          "tr-TR": "Talebi Olu?turan Ki?i Bilgileri"
+        },
+        "controlType": "Label"
+      },
+      "id": "Label1",
+      "type": "Label"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "Row17": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column23"
+            ],
+            "id": "Row17",
+            "type": "Row"
+          },
+          "DataGrid1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column18",
+            "items": [],
+            "id": "DataGrid1",
+            "type": "DataGrid"
+          },
+          "Column7": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row5",
+            "items": [
+              "Label1"
+            ],
+            "id": "Column7",
+            "type": "Column"
+          },
+          "Column9": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row7",
+            "items": [
+              "UserMetadata1"
+            ],
+            "id": "Column9",
+            "type": "Column"
+          },
+          "RelatedDocuments1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": true
+            },
+            "parentId": "Column23",
+            "items": [],
+            "id": "RelatedDocuments1",
+            "type": "RelatedDocuments"
+          },
+          "Header1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "Header1",
+            "type": "Header"
+          },
+          "DocumentMetadata1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column3",
+            "items": [],
+            "id": "DocumentMetadata1",
+            "type": "DocumentMetadata"
+          },
+          "DocumentMetadata2": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column5",
+            "items": [],
+            "id": "DocumentMetadata2",
+            "type": "DocumentMetadata"
+          },
+          "Form1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": null,
+            "items": [
+              "Row1",
+              "Row3",
+              "Row5",
+              "Row7",
+              "Row9",
+              "Row11",
+              "Row12",
+              "Row13",
+              "Row15",
+              "Row17"
+            ],
+            "id": "Form1",
+            "type": "Form"
+          },
+          "NumberBox1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column19",
+            "items": [],
+            "id": "NumberBox1",
+            "type": "NumberBox"
+          },
+          "Column21": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row15",
+            "items": [
+              "TextArea1"
+            ],
+            "id": "Column21",
+            "type": "Column"
+          },
+          "Column11": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row7",
+            "items": [
+              "UserMetadata2"
+            ],
+            "id": "Column11",
+            "type": "Column"
+          },
+          "Column23": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row17",
+            "items": [
+              "RelatedDocuments1"
+            ],
+            "id": "Column23",
+            "type": "Column"
+          },
+          "Row1": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column1"
+            ],
+            "id": "Row1",
+            "type": "Row"
+          },
+          "UserMetadata1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "UserMetadata1",
+            "type": "UserMetadata"
+          },
+          "TextArea1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column21",
+            "items": [],
+            "id": "TextArea1",
+            "type": "TextArea"
+          },
+          "Column13": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row9",
+            "items": [
+              "UserMetadata3"
+            ],
+            "id": "Column13",
+            "type": "Column"
+          },
+          "Divider1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column17",
+            "items": [],
+            "id": "Divider1",
+            "type": "Divider"
+          },
+          "UserMetadata2": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column11",
+            "items": [],
+            "id": "UserMetadata2",
+            "type": "UserMetadata"
+          },
+          "Row3": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column3",
+              "Column5"
+            ],
+            "id": "Row3",
+            "type": "Row"
+          },
+          "UserMetadata3": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column13",
+            "items": [],
+            "id": "UserMetadata3",
+            "type": "UserMetadata"
+          },
+          "Column15": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row9",
+            "items": [
+              "UserMetadata4"
+            ],
+            "id": "Column15",
+            "type": "Column"
+          },
+          "Row11": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column17"
+            ],
+            "id": "Row11",
+            "type": "Row"
+          },
+          "UserMetadata4": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column15",
+            "items": [],
+            "id": "UserMetadata4",
+            "type": "UserMetadata"
+          },
+          "Row12": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column18"
+            ],
+            "id": "Row12",
+            "type": "Row"
+          },
+          "Row5": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column7"
+            ],
+            "id": "Row5",
+            "type": "Row"
+          },
+          "Column1": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row1",
+            "items": [
+              "Header1"
+            ],
+            "id": "Column1",
+            "type": "Column"
+          },
+          "Column17": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row11",
+            "items": [
+              "Divider1"
+            ],
+            "id": "Column17",
+            "type": "Column"
+          },
+          "Row13": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column19"
+            ],
+            "id": "Row13",
+            "type": "Row"
+          },
+          "Column18": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row12",
+            "items": [
+              "DataGrid1"
+            ],
+            "id": "Column18",
+            "type": "Column"
+          },
+          "Row7": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column9",
+              "Column11"
+            ],
+            "id": "Row7",
+            "type": "Row"
+          },
+          "Column3": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row3",
+            "items": [
+              "DocumentMetadata1"
+            ],
+            "id": "Column3",
+            "type": "Column"
+          },
+          "Label1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column7",
+            "items": [],
+            "id": "Label1",
+            "type": "Label"
+          },
+          "Column19": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row13",
+            "items": [
+              "NumberBox1"
+            ],
+            "id": "Column19",
+            "type": "Column"
+          },
+          "Row15": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column21"
+            ],
+            "id": "Row15",
+            "type": "Row"
+          },
+          "Row9": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column13",
+              "Column15"
+            ],
+            "id": "Row9",
+            "type": "Row"
+          },
+          "Column5": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row3",
+            "items": [
+              "DocumentMetadata2"
+            ],
+            "id": "Column5",
+            "type": "Column"
+          }
+        }
+      },
+      "result": [
+        "Form1"
+      ],
+      "description": null
+    },
+    "yoneticigorunum": {
+      "entities": {
+        "items": {
+          "DataGrid1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column18_copy",
+            "items": [],
+            "id": "DataGrid1",
+            "type": "DataGrid"
+          },
+          "Row18": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column24"
+            ],
+            "id": "Row18",
+            "type": "Row"
+          },
+          "RelatedDocuments1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column23_copy",
+            "items": [],
+            "id": "RelatedDocuments1",
+            "type": "RelatedDocuments"
+          },
+          "Header1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column1_copy",
+            "items": [],
+            "id": "Header1",
+            "type": "Header"
+          },
+          "DocumentMetadata1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column3_copy",
+            "items": [],
+            "id": "DocumentMetadata1",
+            "type": "DocumentMetadata"
+          },
+          "DocumentMetadata2": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column5_copy",
+            "items": [],
+            "id": "DocumentMetadata2",
+            "type": "DocumentMetadata"
+          },
+          "Form1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": null,
+            "items": [
+              "Row1_copy",
+              "Row3_copy",
+              "Row5_copy",
+              "Row7_copy",
+              "Row9_copy",
+              "Row11_copy",
+              "Row12_copy",
+              "Row13_copy",
+              "Row15_copy",
+              "Row17_copy",
+              "Row18"
+            ],
+            "id": "Form1",
+            "type": "Form"
+          },
+          "NumberBox1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column19_copy",
+            "items": [],
+            "id": "NumberBox1",
+            "type": "NumberBox"
+          },
+          "Column9_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row7_copy",
+            "items": [
+              "UserMetadata1"
+            ],
+            "id": "Column9_copy",
+            "type": "Column"
+          },
+          "Column7_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row5_copy",
+            "items": [
+              "Label1"
+            ],
+            "id": "Column7_copy",
+            "type": "Column"
+          },
+          "Row17_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column23_copy"
+            ],
+            "id": "Row17_copy",
+            "type": "Row"
+          },
+          "Column5_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row3_copy",
+            "items": [
+              "DocumentMetadata2"
+            ],
+            "id": "Column5_copy",
+            "type": "Column"
+          },
+          "Row9_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column13_copy",
+              "Column15_copy"
+            ],
+            "id": "Row9_copy",
+            "type": "Row"
+          },
+          "Row15_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column21_copy"
+            ],
+            "id": "Row15_copy",
+            "type": "Row"
+          },
+          "Column19_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row13_copy",
+            "items": [
+              "NumberBox1"
+            ],
+            "id": "Column19_copy",
+            "type": "Column"
+          },
+          "Row7_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column9_copy",
+              "Column11_copy"
+            ],
+            "id": "Row7_copy",
+            "type": "Row"
+          },
+          "Column18_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row12_copy",
+            "items": [
+              "DataGrid1"
+            ],
+            "id": "Column18_copy",
+            "type": "Column"
+          },
+          "Column3_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row3_copy",
+            "items": [
+              "DocumentMetadata1"
+            ],
+            "id": "Column3_copy",
+            "type": "Column"
+          },
+          "UserMetadata1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column9_copy",
+            "items": [],
+            "id": "UserMetadata1",
+            "type": "UserMetadata"
+          },
+          "TextArea1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column21_copy",
+            "items": [],
+            "id": "TextArea1",
+            "type": "TextArea"
+          },
+          "Column24": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row18",
+            "items": [
+              "TextArea2"
+            ],
+            "id": "Column24",
+            "type": "Column"
+          },
+          "Divider1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column17_copy",
+            "items": [],
+            "id": "Divider1",
+            "type": "Divider"
+          },
+          "Row13_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column19_copy"
+            ],
+            "id": "Row13_copy",
+            "type": "Row"
+          },
+          "Column17_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row11_copy",
+            "items": [
+              "Divider1"
+            ],
+            "id": "Column17_copy",
+            "type": "Column"
+          },
+          "UserMetadata2": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column11_copy",
+            "items": [],
+            "id": "UserMetadata2",
+            "type": "UserMetadata"
+          },
+          "TextArea2": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": true
+            },
+            "parentId": "Column24",
+            "items": [],
+            "id": "TextArea2",
+            "type": "TextArea"
+          },
+          "Column1_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row1_copy",
+            "items": [
+              "Header1"
+            ],
+            "id": "Column1_copy",
+            "type": "Column"
+          },
+          "UserMetadata3": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column13_copy",
+            "items": [],
+            "id": "UserMetadata3",
+            "type": "UserMetadata"
+          },
+          "Row5_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column7_copy"
+            ],
+            "id": "Row5_copy",
+            "type": "Row"
+          },
+          "Row12_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column18_copy"
+            ],
+            "id": "Row12_copy",
+            "type": "Row"
+          },
+          "Column15_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row9_copy",
+            "items": [
+              "UserMetadata4"
+            ],
+            "id": "Column15_copy",
+            "type": "Column"
+          },
+          "UserMetadata4": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column15_copy",
+            "items": [],
+            "id": "UserMetadata4",
+            "type": "UserMetadata"
+          },
+          "Row11_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column17_copy"
+            ],
+            "id": "Row11_copy",
+            "type": "Row"
+          },
+          "Row3_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column3_copy",
+              "Column5_copy"
+            ],
+            "id": "Row3_copy",
+            "type": "Row"
+          },
+          "Column13_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row9_copy",
+            "items": [
+              "UserMetadata3"
+            ],
+            "id": "Column13_copy",
+            "type": "Column"
+          },
+          "Row1_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column1_copy"
+            ],
+            "id": "Row1_copy",
+            "type": "Row"
+          },
+          "Column23_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row17_copy",
+            "items": [
+              "RelatedDocuments1"
+            ],
+            "id": "Column23_copy",
+            "type": "Column"
+          },
+          "Label1": {
+            "designerProps": {
+              "allowAutoClear": false,
+              "selected": false
+            },
+            "parentId": "Column7_copy",
+            "items": [],
+            "id": "Label1",
+            "type": "Label"
+          },
+          "Column11_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row7_copy",
+            "items": [
+              "UserMetadata2"
+            ],
+            "id": "Column11_copy",
+            "type": "Column"
+          },
+          "Column21_copy": {
+            "designerProps": {
+              "allowAutoClear": true,
+              "selected": false
+            },
+            "parentId": "Row15_copy",
+            "items": [
+              "TextArea1"
+            ],
+            "id": "Column21_copy",
+            "type": "Column"
+          }
+        }
+      },
+      "result": [
+        "Form1"
+      ],
+      "description": "Y?netici Sayfas?"
+    }
+  },
+  "activeView": "yoneticigorunum",
+  "version": 1
+}
